@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>submit survey</title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="author" content="savyo.96">
+<meta name="description" content="survey page">
+
+</head>
+<body>
+    
+    <div>
+    <form action="/surveys/submitSurvey.html" method="POST">
+    <input type="hidden" name="csrf_token" value="545jk5fd_42">
+    <label for="f-name">first Name</label>
+    <input type="text" id="f-name" name="f-name" placeholder="your first name" required>
+    <label for="l-name">last Name</label>
+    <input type="text" id="l-name" name="l-name" placeholder="your last name" required>
+    
+       <br><label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your email" required>
+        <label for="age">your age</label>
+        <select name="age-range" id="age">
+         <option value="age">18</option>
+         <option value="age">18-25</option>
+         <option value="age">25</option>
+        
+    
+
+        </select>
+    <br>
+    <label for="project-description">the project-description</label><br>
+    <textarea name="project-description" id="description" cols="30" rows="10"  placeholder="your description project that did it before"> </textarea><br>
+    <label for="text">Project-screenshot</label>
+    <input type="file" name="project-screenshot" id="screenshot">
+    <br>
+    <label for="text">do you project done</label>
+     <button type="submit" name="project-done">Yes</button>
+     <button type="submit"name="project-done">No</button>    
+    
+    
+    
+    
+    
+    
+    
+    
+    </form></div>
+</body>
